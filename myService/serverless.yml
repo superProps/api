@@ -1,0 +1,14 @@
+service: myService
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  getLyrics:
+    handler: controllers/handler.getLyrics
+    events: 
+      - http:
+          path: lyrics
+          method: get 
+          cors: true
