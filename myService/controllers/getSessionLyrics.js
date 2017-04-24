@@ -33,7 +33,7 @@ function getSessionLyrics (cb) {
             return {
                 lyric: sessionLyric.lyric,
                 correctArtist: sessionLyric.artist,
-                incorrectArtists: wrongAnswers
+                answers: wrongAnswers
             };
         });
         cb(sessionLyrics);
